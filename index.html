@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="icon" href="favicon.png" type="image/png" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle" class="theme-toggle">
+            <span id="toggle-icon">🌞</span> Toggle Theme
+        </button>
+    </div>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Content</h2>
+            <button class="nav-link" data-target="home">Home</button>
+            <button class="nav-link" data-target="articles">Articles</button>
+            <button class="nav-link" data-target="contact">Contact</button>
+        </aside>
+       
+        <main class="main-content">
+            <section id="home" class="section active">
+                <h1 style="color: #9dc5ec; font-style: italic;">Welcome to my portfolio!!😊</h1>
+                <img src="image.jpg" alt="Sparrow Manoti" class="profile-img">
+                <p>Hello! I'm <strong>Sparrow Manoti</strong>, a passionate web developer and a fitness coach and influencer. Here are some of my past projects:</p>
+                <ul>
+                    <li>🌍 <strong>Weather App</strong> – Stay ahead of the forecast with real-time weather updates powered by the OpenWeatherMap API. Instantly check current conditions for any city worldwide with a sleek, responsive interface.</li>
+                    <li>📝 <strong>Notes App</strong> – Organize your thoughts effortlessly with a smart notes app featuring live search, delete options, and automatic saving using localStorage. Your ideas stay safe and accessible even after closing the browser.</li>
+                    <li>📅 <strong>Habit Tracker</strong> – Build better habits with a visual tracker that lets you log progress and see streaks at a glance. Stay motivated as your goals come to life with daily check-ins and stylish animations.</li>
+                </ul>
+            </section>
+
+            <section id="articles" class="section">
+                <h2>Articles</h2>
+                <article>
+                    <h2>The Journey to Clean Code</h2>
+                    <img src="code.png" alt="clean code" class="article-img" height= "200" width= "300">  
+                    <p>Writing clean code is not just about formatting or naming variables. It's a mindset. As developers, we spend more time reading code than writing it. Clean code improves collaboration, debugging, and reduces technical debt. Start by naming things properly, keeping functions small, and applying consistent formatting. Add comments only when necessary. Remember, clean code reads like prose. Follow standards. Refactor often. And always keep the next developer in mind—you.</p>
+                </article>
+                <article>
+                    <h2>Why Responsive Design Matters</h2>
+                    <img src="design.jpg" alt="responsive design" class="article-img" height= "200" width= "300">
+                    <p>In today's mobile-first world, responsive design is essential. A website that adapts across devices provides a better user experience and boosts engagement. From media queries to flexible grids, there are many techniques to achieve responsiveness. It's not just about layout—accessibility and performance are key. Start designing from the smallest screen upward. Test across browsers and resolutions. Responsive sites rank better on search engines too. Always think user-first, not device-first. Embrace responsiveness as a mindset, not a feature.</p>
+                </article>
+            </section>
+
+            <section id="contact" class="section">
+                <h2>Contact Me</h2>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
